@@ -18,7 +18,7 @@ const Torte = () => {
   const classes = useStyles();
   return (
     
-    <Box sx={{pt:25, pb:10}}>
+    <Box sx={{pt:10, pb:10}}>
     <Grid  container  spacing={2} direction="row" justify="center" alignItems="center">
       <Grid item xs={12} lg={6} sm={12} md={6}>
         <Grid container   direction="row" justify="center" alignItems="center" alignContent="center" style={{minHeight:"20rem"}} >

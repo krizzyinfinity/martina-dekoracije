@@ -17,7 +17,8 @@ const useStyles = makeStyles({
    
   },
   typos: {
-    paddingTop:30
+    paddingTop:30,
+   
   }
 });
 const Footer = () => {
@@ -25,9 +26,9 @@ const Footer = () => {
   
   return (
 <Box className={classes.root}>
-   <Typography className={classes.typos}>Martina Dekoracije I Torte</Typography>
-   <Typography lassName={classes.typos}>Email: m5m.erceg@gmail.com</Typography>
-   <Typography lassName={classes.typos}>Mob: 0918910137</Typography>
+   <Typography variant="h5" className={classes.typos}>Martina Dekoracije I Torte</Typography>
+   <Typography variant="h5"lassName={classes.typos}>Email: m5m.erceg@gmail.com</Typography>
+   <Typography variant="h5" lassName={classes.typos}>Mob: 0918910137</Typography>
     </Box>
       
     

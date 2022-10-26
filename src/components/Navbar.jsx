@@ -42,6 +42,7 @@ const drawerWidth = 240;
       logo: {
         flexGrow: "1",
         cursor: "pointer",
+        
       },
       link: {
         textDecoration: "none",
@@ -68,9 +69,15 @@ const Navbar = (props) => {
     const classes = useStyles(); 
     const drawer = (
       <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-        <Typography variant="h6" sx={{ my: 2 }}>
+       
+        <Typography variant="h6" sx={{ my: 2}}>
+          
+        <Link to="/" >
         Martina Dekoracije I Torte
+        </Link>
         </Typography>
+       
+       
         <Divider />
         <List>
         <ListItem  >
@@ -140,7 +147,9 @@ const Navbar = (props) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
+            <Link to="/" className={classes.link}>
             Martina Dekoracije I Torte
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {/* {navItems.map((item) => (

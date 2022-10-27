@@ -23,7 +23,7 @@ const Aranzmani = () => {
   const classes = useStyles();
   return (
     
-    <Box sx={{pt:{md:25, xs:5, sm:15, lg:18}, pb:19, paddingLeft:-3,  mr:{md:20}}}>
+    <Box sx={{pt:{md:25, xs:5, sm:15, lg:18}, pb:17, paddingLeft:-3,  mr:{md:20}}}>
     <Grid  container   rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row" justify="center" alignItems="center">
       <Grid item xs={12} lg={6} sm={12} md={12} >
         <Grid container className={classes.grid0}  direction="row" justify="center" alignItems="center" alignContent="center" style={{minHeight:"20rem"}} >

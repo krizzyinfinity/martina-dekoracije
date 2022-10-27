@@ -18,7 +18,8 @@ const useStyles = makeStyles({
    
   },
   typos: {
-    paddingTop:10,
+    paddingTop:20,
+    
    
   }
 });
@@ -30,7 +31,7 @@ theme.typography.h6 = {
     fontSize: '1.7rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.9rem',
+    fontSize: '1.7rem',
   },
 };
 const Footer = () => {

@@ -40,6 +40,7 @@ code {
   margin-right: auto;
   height: 20rem;
   width: 20rem;
+  
 }
 
 @media (max-width: 480px) {
@@ -52,8 +53,15 @@ code {
   .img2 {
     height: 300px;
     width: 200px;
+   
     
     
+  }
+  @media (min-width: 481px) and (max-width: 1030px) {
+
+    .img2 {
+      width: 20px;
+    }
   }
   
 }

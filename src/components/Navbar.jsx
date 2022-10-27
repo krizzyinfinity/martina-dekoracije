@@ -19,7 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import ListItemButton from '@mui/material/ListItemButton';
 const drawerWidth = 240;
-//const navItems = ['Home', 'Torte',  "Aranzmani", 'Kontakt'];
+
  
   const useStyles = makeStyles ({
     root: {
@@ -32,12 +32,13 @@ const drawerWidth = 240;
         
     },
     navlinks: {
-        marginLeft: "630px",
+        marginLeft: "430px",
         display: "flex",
       },
       navlinks2: {
         textDecoration:"none",
-        color:"grey"
+        color:"grey",
+        
       },
       logo: {
         flexGrow: "1",
@@ -47,7 +48,7 @@ const drawerWidth = 240;
       link: {
         textDecoration: "none",
         color: "white",
-        fontSize: "20px",
+        fontSize: "1.7rem",
         marginLeft: "30px",
         "&:hover": {
           color: "grey",
@@ -72,9 +73,8 @@ const Navbar = (props) => {
        
         <Typography variant="h6" sx={{ my: 2}}>
           
-        <Link to="/" >
         Martina Dekoracije I Torte
-        </Link>
+        
         </Typography>
        
        
@@ -110,18 +110,7 @@ const Navbar = (props) => {
           </ListItem>
          
           
-          {/* {navItems.map((item) => (
-            <>
-            
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary={item} >
-                
-                </ListItemText>
-              </ListItemButton>
-            </ListItem>
-            </>
-          ))} */}
+          
         </List>
       </Box>
     );
@@ -138,25 +127,21 @@ const Navbar = (props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display:{md:"none"}  }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none', md:"flex" } }}
           >
             <Link to="/" className={classes.link}>
             Martina Dekoracije I Torte
             </Link>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {/* {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))} */}
+          <Box sx={{ display: { xs: 'none', sm: 'none', md:"block" } }}>
+            
             <div className={classes.navlinks}>
              <Link to="/" className={classes.link}>
                Home
@@ -181,10 +166,10 @@ const Navbar = (props) => {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
-            display: { xs: 'block', sm: 'none'  },
+            display: { xs: 'block', sm: 'block', md:"none"  },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >
@@ -192,59 +177,11 @@ const Navbar = (props) => {
         </Drawer>
       </Box>
       </Box>
-//    <>
-       
-//         <AppBar sx={{height: {lg:"90px", xs:"80px", md:"90px", sm:"80px"},
-//         width:"100%",
-//         paddingTop:1.2}} position="static" style={{background:"linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}}>
-//             <CssBaseline />
-//             <Toolbar>
-//             <IconButton
-//             color="inherit"
-//             aria-label="open drawer"
-//             edge="start"
-//            // onClick={handleDrawerToggle}
-//             sx={{ mr: 2, display: { sm: 'none' } }}
-//           >
-//             <MenuIcon />
-//           </IconButton>
-// <Typography variant="h4"
-//   sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-// className={classes.logo}
-// >
-//     Martina Dekoracije I Torte
-// </Typography>
-
-// <div className={classes.navlinks}>
-//             <Link to="/" className={classes.link}>
-//               Home
-//             </Link>
-//             <Link to="/aranzmani" className={classes.link}>
-//               Aranzmani
-//             </Link>
-//             <Link to="/torte" className={classes.link}>
-//               Torte
-//             </Link>
-//             <Link to="/kontakt" className={classes.link}>
-//               Kontakt
-//             </Link>
-            
-           
-//           </div>
-          
-//             </Toolbar>
-            
-//         </AppBar>
-     
-      
-//    </>
+//   
   )
 }
 Navbar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+ 
   window: Navbar.func,
 };
 

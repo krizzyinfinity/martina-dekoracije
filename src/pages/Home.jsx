@@ -14,7 +14,7 @@ const items = [
  
 
     <Box sx={{display: "flex", alignItems:"center",
-     justifyContent:"center", paddingTop:{xs:20, lg:60, sm:12, md:30}
+     justifyContent:"center", paddingTop:{xs:20,lg:7, sm:12, md:30}
     }}
      >
     
@@ -24,14 +24,14 @@ const items = [
  
   </Box>,
   <Box sx={{ 
-     display: "flex", alignItems:"center", justifyContent:"center",paddingTop:{xs:20,lg:60, sm:12, md:30}}}>
+     display: "flex", alignItems:"center", justifyContent:"center",paddingTop:{xs:20,lg:10, sm:12, md:30}}}>
  
  <img className='myimg '  src={Arr2} onDragStart={handleDragStart} role="presentation" />
   <Typography sx={{fontSize:{md:40,xs:16, sm:25 }}}>Aranzmani za groblja</Typography>
  
   </Box>,
   <Box sx={{
-     display: "flex", alignItems:"center", justifyContent:"center",  paddingTop:{lg:70,xs:20, sm:30, md:50}}}>
+     display: "flex", alignItems:"center", justifyContent:"center",  paddingTop:{lg:30,xs:20, sm:30, md:50}}}>
  
   <img className='myimg' style={{padding: 20}} src={To1} onDragStart={handleDragStart} role="presentation" />
   <Typography sx={{fontSize:{md:40,xs:16, sm:25 }}}>Kolaci za sve prilike</Typography>
@@ -39,7 +39,7 @@ const items = [
   
   </Box>,
   <Box sx={{ 
-     display: "flex", alignItems:"center", justifyContent:"center",  paddingTop:{lg:70,xs:20, sm:30, md:50}}}>
+     display: "flex", alignItems:"center", justifyContent:"center",  paddingTop:{lg:30,xs:20, sm:30, md:50}}}>
 
   <img className='myimg' style={{ padding: 20}} src={To2} onDragStart={handleDragStart} role="presentation" />
   <Typography  sx={{fontSize:{md:40,xs:16, sm:25 },width:{xs:100, md:600, sm:400} }}>Torte za rodjendane i razna slavlja</Typography>
